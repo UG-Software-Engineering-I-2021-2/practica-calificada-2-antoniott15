@@ -1,0 +1,64 @@
+
+?lector.Lector#anadirNuevoLibro(Llibro/Libro;)Ljava/lang/String;Y
+O/Users/antoniotoche/Documents/utec/ingsoft/PC1/src/main/java/lector/Lector.java (""3*è
+2Y
+O/Users/antoniotoche/Documents/utec/ingsoft/PC1/src/main/java/lector/Lector.java (;"‡
+Y
+O/Users/antoniotoche/Documents/utec/ingsoft/PC1/src/main/java/lector/Lector.java (<*(
+&Este usuario no puede tener mas libros*£
+3Y
+O/Users/antoniotoche/Documents/utec/ingsoft/PC1/src/main/java/lector/Lector.java (˜
+•
+Y
+O/Users/antoniotoche/Documents/utec/ingsoft/PC1/src/main/java/lector/Lector.java (
+%0java.util.Map"__id**
+lector.Lector"
+librosŸœ
+Y
+O/Users/antoniotoche/Documents/utec/ingsoft/PC1/src/main/java/lector/Lector.java (	
+%1int"java.util.Map#size()I*
+
+%0java.util.Map2size()*
+2
+1*¡	
+1Y
+O/Users/antoniotoche/Documents/utec/ingsoft/PC1/src/main/java/lector/Lector.java (˜
+•
+Y
+O/Users/antoniotoche/Documents/utec/ingsoft/PC1/src/main/java/lector/Lector.java (
+%2java.util.Map"__id**
+lector.Lector"
+librosÂ
+¿
+Y
+O/Users/antoniotoche/Documents/utec/ingsoft/PC1/src/main/java/lector/Lector.java (.
+%3java.time.LocalDate".java.time.LocalDate#now()Ljava/time/LocalDate;*"
+java.time.LocalDateÏ
+Ì
+Y
+O/Users/antoniotoche/Documents/utec/ingsoft/PC1/src/main/java/lector/Lector.java (/
+%4java.time.LocalDate"__mapSet*
+
+%2java.util.Map*
+
+librolibro.Libro*
+
+%3java.time.LocalDateÐÍ
+Y
+O/Users/antoniotoche/Documents/utec/ingsoft/PC1/src/main/java/lector/Lector.java7 (M
+%5java.lang.String".libro.Libro#getLibroNombre()Ljava/lang/String;*
+
+librolibro.Libro2getLibroNombre()Ä
+Á
+Y
+O/Users/antoniotoche/Documents/utec/ingsoft/PC1/src/main/java/lector/Lector.java (M
+%6java.lang.String"__concat*(&
+$Nuevo libro aÃ±adido con el nombre: *
+
+%5java.lang.String"u
+Y
+O/Users/antoniotoche/Documents/utec/ingsoft/PC1/src/main/java/lector/Lector.java (N
+
+%6java.lang.String:
+librolibro.LibroB
+lector.Lector

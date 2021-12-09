@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b9c1cf92-935c-4a52-a522-ec826ebea603" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/Tests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/biblioteca/Biblioteca.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/biblioteca/Biblioteca.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lector/Lector.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/libro/Libro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestBiblioteca.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lector/Lector.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lector/Lector.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/practica-calificada1-antoniotoche-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/practica-calificada1-antoniotoche-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/report-task.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/report-task.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/all.typedefs" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/all.typedefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_10.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_10.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_11.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_11.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_12.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_12.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_13.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_13.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_14.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_14.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_15.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_15.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_16.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_16.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_17.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_17.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_18.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_18.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_19.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_19.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_20.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_20.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_21.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_21.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_22.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_22.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_23.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_23.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_24.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_6.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_6.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_7.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_7.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_8.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_8.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_9.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_9.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/TestBiblioteca.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestBiblioteca.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2246SNwems2e7XhWwvOlV6WSiTD" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.google.cloudcode.ide_session_index" value="20211209_0000" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b9c1cf92-935c-4a52-a522-ec826ebea603" name="Changes" comment="" />
+      <created>1639084513546</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1639084513546</updated>
+      <workItem from="1639084517561" duration="1088000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

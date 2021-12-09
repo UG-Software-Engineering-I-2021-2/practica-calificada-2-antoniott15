@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Biblioteca.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">practica-calificada1-antoniotoche</a> &gt; <a href="index.source.html" class="el_package">biblioteca</a> &gt; <span class="el_source">Biblioteca.java</span></div><h1>Biblioteca.java</h1><pre class="source lang-java linenums">package biblioteca;
+
+import lector.Lector;
+import libro.Libro;
+
+import java.util.List;
+import java.util.Map;
+
+<span class="fc" id="L9">public class Biblioteca {</span>
+    private List&lt;Libro&gt; totalLibros;
+    private Map&lt;String, Lector&gt; lectores;
+
+
+    public String prestarLibro(String nombreLibro, Lector lector) {
+<span class="nc" id="L15">        Libro libroSelected = new Libro(&quot;&quot;, &quot;&quot;,&quot;&quot;,&quot;&quot;);</span>
+<span class="nc bnc" id="L16" title="All 2 branches missed.">        for (Libro libro : this.totalLibros) {</span>
+<span class="nc bnc" id="L17" title="All 2 branches missed.">            if(libro.getLibroNombre().equals(nombreLibro)) {</span>
+<span class="nc" id="L18">                libroSelected = libro;</span>
+            }
+<span class="nc" id="L20">        }</span>
+
+<span class="nc bnc" id="L22" title="All 2 branches missed.">        if(libroSelected.getLibroNombre().length() == 0) {</span>
+<span class="nc" id="L23">            return &quot;No libro encontrado con ese nombre&quot;;</span>
+        }
+
+<span class="nc bnc" id="L26" title="All 4 branches missed.">        if(!libroSelected.getStatus().equals(&quot;habilitado&quot;) || libroSelected.getStatus().equals(&quot;prestado&quot;)) {</span>
+<span class="nc" id="L27">            return &quot;el libro no se encuentra disponible&quot;;</span>
+        }
+
+<span class="nc" id="L30">        String lectorRespuesta = lector.anadirNuevoLibro(libroSelected);</span>
+<span class="nc bnc" id="L31" title="All 2 branches missed.">        if(lectorRespuesta.equals(&quot;Este usuario no puede tener mas libros&quot;)) {</span>
+<span class="nc" id="L32">            return lectorRespuesta;</span>
+        }
+
+<span class="nc" id="L35">        this.lectores.put(libroSelected.getIdentificador(), lector);</span>
+
+<span class="nc" id="L37">        int indexSelected = this.totalLibros.indexOf(libroSelected);</span>
+<span class="nc" id="L38">        libroSelected.setStatus(&quot;prestado&quot;);</span>
+<span class="nc" id="L39">        this.totalLibros.set(indexSelected, libroSelected);</span>
+
+<span class="nc" id="L41">        return &quot;Se ha prestado el libro correctamente&quot;;</span>
+    }
+    public List&lt;Libro&gt; getTotalLibros() {
+<span class="fc" id="L44">        return totalLibros;</span>
+    }
+
+    public void setTotalLibros(List&lt;Libro&gt; totalLibros) {
+<span class="fc" id="L48">        this.totalLibros = totalLibros;</span>
+<span class="fc" id="L49">    }</span>
+
+    public Map&lt;String, Lector&gt; getLectores() {
+<span class="nc" id="L52">        return lectores;</span>
+    }
+
+    public void setLectores(Map&lt;String, Lector&gt; lectores) {
+<span class="nc" id="L56">        this.lectores = lectores;</span>
+<span class="nc" id="L57">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.6.202009150832</span></div></body></html>
