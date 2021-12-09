@@ -1,4 +1,0 @@
-GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
-practica-calificada1-antoniotoche,libro,Libro,42,30,0,0,18,9,12,1,12,1
-practica-calificada1-antoniotoche,lector,Lector,43,0,2,0,13,0,7,0,6,0
-practica-calificada1-antoniotoche,biblioteca,Biblioteca,85,10,12,0,20,4,9,3,3,3
