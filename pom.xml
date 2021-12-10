@@ -5,33 +5,24 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
+
     <artifactId>practica-calificada2-antoniotoche</artifactId>
     <version>1.0-SNAPSHOT</version>
-
-
-    <properties>
-        <maven.compiler.source>1.7</maven.compiler.source>
-        <maven.compiler.target>1.7</maven.compiler.target>
-        <sonar.organization>ug-software-engineering-i-2021-2</sonar.organization>
-        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-    </properties>
-
     <dependencies>
-
-        <dependency>
-            <groupId>commons-logging</groupId>
-            <artifactId>commons-logging</artifactId>
-            <version>1.2</version>
-        </dependency>
-
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
             <version>7.3.0</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
+    <properties>
 
-
+        <sonar.organization>ug-software-engineering-i-2021-2</sonar.organization>
+        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+        <maven.compiler.source>14</maven.compiler.source>
+        <maven.compiler.target>14</maven.compiler.target>
+    </properties>
     <build>
         <plugins>
             <plugin>
@@ -57,16 +48,9 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.12.4</version>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>8</source>
-                    <target>8</target>
-                </configuration>
+                <version>3.0.0-M1</version>
             </plugin>
         </plugins>
     </build>
 </project>
+
