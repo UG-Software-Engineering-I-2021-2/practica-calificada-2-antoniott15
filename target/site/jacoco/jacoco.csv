@@ -1,5 +1,5 @@
 GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
-practica-calificada2-antoniotoche,principal,Principal,4,201,0,20,2,41,1,12,1,2
-practica-calificada2-antoniotoche,teacher,Teacher,23,18,4,0,5,7,4,1,1,1
-practica-calificada2-antoniotoche,student,Student,33,0,4,0,10,0,5,0,2,0
+practica-calificada2-antoniotoche,principal,Principal,53,213,6,20,12,41,5,14,2,4
+practica-calificada2-antoniotoche,teacher,Teacher,26,18,4,0,6,7,5,1,2,1
+practica-calificada2-antoniotoche,student,Student,36,0,4,0,11,0,6,0,3,0
 practica-calificada2-antoniotoche,pair,Pair,0,15,0,0,0,6,0,3,0,3

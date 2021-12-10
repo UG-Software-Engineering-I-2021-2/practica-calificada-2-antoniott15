@@ -1,28 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Teacher.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">practica-calificada2-antoniotoche</a> &gt; <a href="index.source.html" class="el_package">teacher</a> &gt; <span class="el_source">Teacher.java</span></div><h1>Teacher.java</h1><pre class="source lang-java linenums">package teacher;
 
 public class Teacher {
-    private String _Nombre;
-    private int _Tipo;
-<span class="fc" id="L6">    private int _salarioBaseMensual =2000;</span>
-<span class="fc" id="L7">    private int _comision = 500;</span>
-<span class="fc" id="L8">    private int _bonus = 100;</span>
-    static final int ProfesorTP = 0;
-    static final int ProfesorTC = 1;
-    static final int Administrativo = 2;
+    private String nombre;
+    private int tipo;
+<span class="fc" id="L6">    private int salarioBaseMensual =2000;</span>
+<span class="fc" id="L7">    private int comision = 500;</span>
+<span class="fc" id="L8">    private int bonus = 100;</span>
+    static final int PROFESOR_TP = 0;
+    static final int PROFESOR_TC = 1;
+    static final int ADMINISTRATIVO = 2;
 <span class="fc" id="L12">    public Teacher(int type, String nombre) {</span>
-<span class="fc" id="L13">        _Tipo = type;</span>
-<span class="fc" id="L14">        _Nombre = nombre;</span>
+<span class="fc" id="L13">        this.tipo = type;</span>
+<span class="fc" id="L14">        this.nombre = nombre;</span>
 <span class="fc" id="L15">    }</span>
-    int Sueldo() {
-<span class="nc bnc" id="L17" title="All 4 branches missed.">        switch (_Tipo) {</span>
-            case ProfesorTP:
-<span class="nc" id="L19">                return _salarioBaseMensual;</span>
-            case ProfesorTC:
-<span class="nc" id="L21">                return _salarioBaseMensual + _comision;</span>
-            case Administrativo:
-<span class="nc" id="L23">                return _salarioBaseMensual + _bonus;</span>
+
+    public String getTeacherName() {
+<span class="nc" id="L18">        return this.nombre;</span>
+    }
+
+    int sueldo() throws ExceptionInInitializerError {
+<span class="nc bnc" id="L22" title="All 4 branches missed.">        switch (this.tipo) {</span>
+            case PROFESOR_TP:
+<span class="nc" id="L24">                return salarioBaseMensual;</span>
+            case PROFESOR_TC:
+<span class="nc" id="L26">                return salarioBaseMensual + comision;</span>
+            case ADMINISTRATIVO:
+<span class="nc" id="L28">                return salarioBaseMensual + bonus;</span>
             default:
-<span class="nc" id="L25">                throw new RuntimeException(&quot;Empleado incorrecto&quot;);</span>
+<span class="nc" id="L30">                throw new ExceptionInInitializerError(&quot;Empleado incorrecto&quot;);</span>
         }
     }
 }
