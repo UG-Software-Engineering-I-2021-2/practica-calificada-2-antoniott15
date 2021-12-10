@@ -18,7 +18,7 @@ public class Teacher {
         return this.nombre;
     }
 
-    int sueldo() throws ExceptionInInitializerError {
+    public int sueldo() throws ExceptionInInitializerError {
         switch (this.tipo) {
             case PROFESOR_TP:
                 return salarioBaseMensual;

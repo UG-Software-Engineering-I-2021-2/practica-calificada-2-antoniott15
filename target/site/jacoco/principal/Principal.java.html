@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Principal.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">practica-calificada2-antoniotoche</a> &gt; <a href="index.source.html" class="el_package">principal</a> &gt; <span class="el_source">Principal.java</span></div><h1>Principal.java</h1><pre class="source lang-java linenums">package principal;
+
+import pair.Pair;
+import teacher.Teacher;
+
+import java.util.AbstractMap;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+import java.util.logging.Logger;
+
+public class Principal {
+    private final int yearToCalculate;
+<span class="fc" id="L14">    private List&lt;String&gt; studentWithPlusPoints = new ArrayList&lt;&gt;();</span>
+<span class="fc" id="L15">    static final Logger CUSTOM_LOGGER = Logger.getLogger(Principal.class.getName());</span>
+
+
+<span class="fc" id="L18">    private final Map&lt;Integer, List&lt;Pair&lt;Teacher, Boolean&gt;&gt;&gt; allYearsTeachers = Map.ofEntries(</span>
+            new AbstractMap.SimpleImmutableEntry&lt;&gt;(
+<span class="fc" id="L20">                    2020,</span>
+<span class="fc" id="L21">                    List.of(</span>
+<span class="fc" id="L22">                            new Pair&lt;&gt;(new Teacher(1, &quot;Josefina&quot;), true),</span>
+<span class="fc" id="L23">                            new Pair&lt;&gt;(new Teacher(1, &quot;Edonisio&quot;), true),</span>
+<span class="fc" id="L24">                            new Pair&lt;&gt;(new Teacher(1, &quot;Edufasio&quot;), false)</span>
+                    )
+            ),
+            new AbstractMap.SimpleImmutableEntry&lt;&gt;(
+<span class="fc" id="L28">                    2019,</span>
+<span class="fc" id="L29">                    List.of(</span>
+<span class="fc" id="L30">                            new Pair&lt;&gt;(new Teacher(1, &quot;Eduarda&quot;), false),</span>
+<span class="fc" id="L31">                            new Pair&lt;&gt;(new Teacher(1, &quot;Abelardo&quot;), false),</span>
+<span class="fc" id="L32">                            new Pair&lt;&gt;(new Teacher(1, &quot;Francisca&quot;), false)</span>
+                    )
+            )
+    );
+
+    public void teachersAvailableToAddPoints() {
+<span class="nc bnc" id="L38" title="All 2 branches missed.">        for (Map.Entry&lt;Integer, List&lt;Pair&lt;Teacher, Boolean&gt;&gt;&gt; allTeachers : allYearsTeachers.entrySet()) {</span>
+<span class="nc" id="L39">                List&lt;Pair&lt;Teacher, Boolean&gt;&gt; teachers = allTeachers.getValue();</span>
+<span class="nc bnc" id="L40" title="All 2 branches missed.">                for (Pair&lt;Teacher, Boolean&gt; eachTeacher : teachers) {</span>
+<span class="nc" id="L41">                    Teacher teacher =  eachTeacher.first();</span>
+<span class="nc" id="L42">                    CUSTOM_LOGGER.info(teacher.getTeacherName());</span>
+<span class="nc" id="L43">                }</span>
+<span class="nc" id="L44">        }</span>
+<span class="nc" id="L45">    }</span>
+
+    public void studentsWhoGetExtraPoints() {
+<span class="nc bnc" id="L48" title="All 2 branches missed.">        for(String student: this.studentWithPlusPoints){</span>
+<span class="nc" id="L49">            CUSTOM_LOGGER.info(student);</span>
+<span class="nc" id="L50">        }</span>
+<span class="nc" id="L51">    }</span>
+
+<span class="fc" id="L53">    public Principal(int yearToCalculate) {</span>
+<span class="fc" id="L54">        this.yearToCalculate = yearToCalculate;</span>
+<span class="fc" id="L55">    }</span>
+
+    public float calculateGrades(final List&lt;Pair&lt;Integer, Float&gt;&gt; examsStudents, final boolean hasReachedMinimumClasses,final String studentName) {
+<span class="fc bfc" id="L58" title="All 4 branches covered.">        if (examsStudents.isEmpty() || !hasReachedMinimumClasses) {</span>
+<span class="fc" id="L59">            return 0f;</span>
+        }
+
+<span class="fc" id="L62">        float gradesSum = 0f;</span>
+<span class="fc" id="L63">        int gradesWeightSum = 0;</span>
+
+<span class="fc bfc" id="L65" title="All 2 branches covered.">        for (Pair&lt;Integer, Float&gt; examGrade : examsStudents) {</span>
+<span class="fc" id="L66">            gradesSum += (examGrade.first() * examGrade.second() / 100);</span>
+<span class="fc" id="L67">            gradesWeightSum += examGrade.first();</span>
+<span class="fc" id="L68">        }</span>
+
+
+<span class="fc bfc" id="L71" title="All 2 branches covered.">        if (gradesWeightSum == 100) {</span>
+<span class="fc bfc" id="L72" title="All 2 branches covered.">            if (this.availableToAddPoints()) {</span>
+<span class="fc" id="L73">                this.studentWithPlusPoints.add(studentName);</span>
+<span class="fc" id="L74">                return Float.min(10f, gradesSum + 1);</span>
+            } else {
+<span class="fc" id="L76">                return gradesSum;</span>
+            }
+        }
+
+<span class="fc bfc" id="L80" title="All 2 branches covered.">        if (gradesWeightSum &gt; 100) {</span>
+<span class="fc" id="L81">            return -1f;</span>
+        }
+
+<span class="fc" id="L84">        return -2f;</span>
+    }
+
+    private boolean availableToAddPoints() {
+<span class="fc bfc" id="L88" title="All 2 branches covered.">        for (Map.Entry&lt;Integer, List&lt;Pair&lt;Teacher, Boolean&gt;&gt;&gt; yearlyTeachers : allYearsTeachers.entrySet()) {</span>
+<span class="fc bfc" id="L89" title="All 2 branches covered.">            if (this.yearToCalculate == yearlyTeachers.getKey()) {</span>
+<span class="fc" id="L90">                List&lt;Pair&lt;Teacher, Boolean&gt;&gt; teachers = yearlyTeachers.getValue();</span>
+<span class="fc bfc" id="L91" title="All 2 branches covered.">                for (Pair&lt;Teacher, Boolean&gt; teacher : teachers) {</span>
+<span class="fc bfc" id="L92" title="All 2 branches covered.">                    if (Boolean.FALSE.equals(teacher.second())) {</span>
+<span class="fc" id="L93">                        continue;</span>
+                    }
+<span class="fc" id="L95">                    return true;</span>
+                }
+            }
+<span class="fc" id="L98">        }</span>
+<span class="fc" id="L99">        return false;</span>
+    }
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.6.202009150832</span></div></body></html>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="PrincipalTest" time="1.574" tests="21" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="16"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/antoniotoche/Documents/utec/ingsoft/PC2/target/test-classes:/Users/antoniotoche/Documents/utec/ingsoft/PC2/target/classes:/Users/antoniotoche/.m2/repository/org/testng/testng/7.3.0/testng-7.3.0.jar:/Users/antoniotoche/.m2/repository/com/beust/jcommander/1.78/jcommander-1.78.jar:/Users/antoniotoche/.m2/repository/org/apache/ant/ant/1.10.3/ant-1.10.3.jar:/Users/antoniotoche/.m2/repository/org/apache/ant/ant-launcher/1.10.3/ant-launcher-1.10.3.jar:/Users/antoniotoche/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/antoniotoche/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/antoniotoche/.m2/repository/com/google/inject/guice/4.2.2/guice-4.2.2-no_aop.jar:/Users/antoniotoche/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar:/Users/antoniotoche/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/Users/antoniotoche/.m2/repository/com/google/guava/guava/25.1-android/guava-25.1-android.jar:/Users/antoniotoche/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/antoniotoche/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/antoniotoche/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/antoniotoche/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/antoniotoche/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/antoniotoche/.m2/repository/org/yaml/snakeyaml/1.21/snakeyaml-1.21.jar:/Users/antoniotoche/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:"/>
+    <property name="java.vm.vendor" value="Homebrew"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="16"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="PE"/>
+    <property name="sun.boot.library.path" value="/usr/local/Cellar/openjdk/16.0.1/libexec/openjdk.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/antoniotoche/Documents/utec/ingsoft/PC2/target/surefire/surefirebooter15032423321496122948.jar /Users/antoniotoche/Documents/utec/ingsoft/PC2/target/surefire 2021-12-09T22-00-48_057-jvmRun1 surefire13931868690273375028tmp surefire_01397512537421698830tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/antoniotoche/Documents/utec/ingsoft/PC2/target/test-classes:/Users/antoniotoche/Documents/utec/ingsoft/PC2/target/classes:/Users/antoniotoche/.m2/repository/org/testng/testng/7.3.0/testng-7.3.0.jar:/Users/antoniotoche/.m2/repository/com/beust/jcommander/1.78/jcommander-1.78.jar:/Users/antoniotoche/.m2/repository/org/apache/ant/ant/1.10.3/ant-1.10.3.jar:/Users/antoniotoche/.m2/repository/org/apache/ant/ant-launcher/1.10.3/ant-launcher-1.10.3.jar:/Users/antoniotoche/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/antoniotoche/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/antoniotoche/.m2/repository/com/google/inject/guice/4.2.2/guice-4.2.2-no_aop.jar:/Users/antoniotoche/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar:/Users/antoniotoche/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/Users/antoniotoche/.m2/repository/com/google/guava/guava/25.1-android/guava-25.1-android.jar:/Users/antoniotoche/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/antoniotoche/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/antoniotoche/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/antoniotoche/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/antoniotoche/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/antoniotoche/.m2/repository/org/yaml/snakeyaml/1.21/snakeyaml-1.21.jar:/Users/antoniotoche/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/antoniotoche"/>
+    <property name="user.language" value="es"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2021-04-20"/>
+    <property name="java.home" value="/usr/local/Cellar/openjdk/16.0.1/libexec/openjdk.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/antoniotoche/Documents/utec/ingsoft/PC2"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="surefire.real.class.path" value="/Users/antoniotoche/Documents/utec/ingsoft/PC2/target/surefire/surefirebooter15032423321496122948.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="16.0.1+0"/>
+    <property name="user.name" value="antoniotoche"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="12.0.1"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="US-ASCII"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Homebrew"/>
+    <property name="localRepository" value="/Users/antoniotoche/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="java.io.tmpdir" value="/var/folders/zg/9hpmn3rn2jn6y227h2gs255w0000gn/T/"/>
+    <property name="java.version" value="16.0.1"/>
+    <property name="user.dir" value="/Users/antoniotoche/Documents/utec/ingsoft/PC2"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.library.path" value="/Users/antoniotoche/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Homebrew"/>
+    <property name="java.vm.version" value="16.0.1+0"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="60.0"/>
+  </properties>
+  <testcase name="calculate_average_grade_given_different_exam_grades_and_attending_the_minimum_classes" classname="PrincipalTest" time="0.115"/>
+  <testcase name="calculate_same_grade_given_one_single_exam_and_attending_the_minimum_classes" classname="PrincipalTest" time="0"/>
+  <testcase name="fail_given_different_exam_grades_but_not_attending_the_minimum_classes" classname="PrincipalTest" time="0"/>
+  <testcase name="fail_given_odd_exam_grades_but_attending_the_minimum_classes" classname="PrincipalTest" time="0"/>
+  <testcase name="fail_given_one_single_exam_but_not_attending_the_minimum_classes" classname="PrincipalTest" time="0"/>
+  <testcase name="fail_given_there_are_no_exams" classname="PrincipalTest" time="0"/>
+  <testcase name="fail_when_there_are_no_exams_and_has_not_attended_the_minimum_classes" classname="PrincipalTest" time="0"/>
+  <testcase name="get_student_grade_doctorado" classname="PrincipalTest" time="0"/>
+  <testcase name="get_student_grade_maestria" classname="PrincipalTest" time="0"/>
+  <testcase name="get_student_grade_pregrado" classname="PrincipalTest" time="0"/>
+  <testcase name="get_student_name" classname="PrincipalTest" time="0"/>
+  <testcase name="get_teacher_grade_doctorado" classname="PrincipalTest" time="0"/>
+  <testcase name="get_teacher_grade_maestria" classname="PrincipalTest" time="0"/>
+  <testcase name="get_teacher_grade_pregrado" classname="PrincipalTest" time="0"/>
+  <testcase name="get_teacher_name" classname="PrincipalTest" time="0"/>
+  <testcase name="increase_one_extra_point_if_there_is_any_benevolent_teacher_in_the_year_to_calculate_grades" classname="PrincipalTest" time="0"/>
+  <testcase name="maintain_10_as_the_maximum_grade_even_if_increasing_one_extra_point" classname="PrincipalTest" time="0.001"/>
+  <testcase name="not_increase_one_extra_point_if_there_is_not_any_benevolent_teacher_in_the_year_to_calculate_grades" classname="PrincipalTest" time="0"/>
+  <testcase name="round_up_to_2_decimals_given_odd_exam_grades_and_attending_the_minimum_classes" classname="PrincipalTest" time="0"/>
+  <testcase name="validate_all_exam_grades_weight_below_100" classname="PrincipalTest" time="0"/>
+  <testcase name="validate_all_exam_grades_weight_over_100" classname="PrincipalTest" time="0"/>
+</testsuite>

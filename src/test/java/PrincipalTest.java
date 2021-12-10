@@ -3,6 +3,8 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import pair.Pair;
 import principal.Principal;
+import student.Student;
+import teacher.Teacher;
 
 import java.util.Collections;
 import java.util.List;
@@ -174,5 +176,55 @@ public class PrincipalTest {
         Assert.assertEquals(10, studentGradeCalculator.calculateGrades(examsGrades, hasReachedMinimumClasses, "ANTONIO"));
     }
 
+    @Test
+    void get_student_name() {
+        Student st = new Student(2,"ANTONIO");
+        Assert.assertEquals(st.getStudentName(), "ANTONIO");
+    }
+
+    @Test
+    void get_student_grade_doctorado() {
+        Student st = new Student(2,"ANTONIO");
+        Assert.assertEquals(st.grado(), 13);
+    }
+
+    @Test
+    void get_student_grade_maestria() {
+        Student st = new Student(1,"ANTONIO");
+        Assert.assertEquals(st.grado(), 12);
+    }
+
+
+    @Test
+    void get_student_grade_pregrado() {
+        Student st = new Student(0,"ANTONIO");
+        Assert.assertEquals(st.grado(), 11);
+    }
+
+
+    @Test
+    void get_teacher_name() {
+        Teacher st = new Teacher(2,"ANTONIO");
+        Assert.assertEquals(st.getTeacherName(), "ANTONIO");
+    }
+
+    @Test
+    void get_teacher_grade_doctorado() {
+        Teacher st = new Teacher(0,"ANTONIO");
+        Assert.assertEquals(st.sueldo(), 2000);
+    }
+
+    @Test
+    void get_teacher_grade_maestria() {
+        Teacher st = new Teacher(1,"ANTONIO");
+        Assert.assertEquals(st.sueldo(), 2500);
+    }
+
+
+    @Test
+    void get_teacher_grade_pregrado() {
+        Teacher st = new Teacher(2,"ANTONIO");
+        Assert.assertEquals(st.sueldo(), 2100);
+    }
 
 }

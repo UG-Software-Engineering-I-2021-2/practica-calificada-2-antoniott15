@@ -8,16 +8,16 @@ public class Student {
     static final int MAESTRIA = 1;
     static final int DOCTORADO = 2;
 
-    Student(int type, String nombre) {
+    public Student(int type, String nombre) {
         this.tipo = type;
         this.nombre = nombre;
     }
 
-    String getStudentName() {
+    public String getStudentName() {
         return this.nombre;
     }
 
-    int grado() throws ExceptionInInitializerError {
+    public int grado() throws ExceptionInInitializerError {
         switch (this.tipo) {
             case PREGRADO:
                 return notaBase;
