@@ -14,7 +14,7 @@ public class Teacher {
         this.nombre = nombre;
     }
 
-    String getTeacherName() {
+    public String getTeacherName() {
         return this.nombre;
     }
 

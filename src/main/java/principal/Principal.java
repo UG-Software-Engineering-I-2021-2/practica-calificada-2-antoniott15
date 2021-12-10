@@ -4,11 +4,16 @@ import pair.Pair;
 import teacher.Teacher;
 
 import java.util.AbstractMap;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.util.logging.Logger;
 
 public class Principal {
     private final int yearToCalculate;
+    private List<String> studentWithPlusPoints = new ArrayList<>();
+    static final Logger CUSTOM_LOGGER = Logger.getLogger(Principal.class.getName());
+
 
     private final Map<Integer, List<Pair<Teacher, Boolean>>> allYearsTeachers = Map.ofEntries(
             new AbstractMap.SimpleImmutableEntry<>(
@@ -30,14 +35,26 @@ public class Principal {
     );
 
     public void teachersAvailableToAddPoints() {
+        for (Map.Entry<Integer, List<Pair<Teacher, Boolean>>> allTeachers : allYearsTeachers.entrySet()) {
+                List<Pair<Teacher, Boolean>> teachers = allTeachers.getValue();
+                for (Pair<Teacher, Boolean> eachTeacher : teachers) {
+                    Teacher teacher =  eachTeacher.first();
+                    CUSTOM_LOGGER.info(teacher.getTeacherName());
+                }
+        }
+    }
 
+    public void studentsWhoGetExtraPoints() {
+        for(String student: this.studentWithPlusPoints){
+            CUSTOM_LOGGER.info(student);
+        }
     }
 
     public Principal(int yearToCalculate) {
         this.yearToCalculate = yearToCalculate;
     }
 
-    public float calculateGrades(final List<Pair<Integer, Float>> examsStudents, final boolean hasReachedMinimumClasses) {
+    public float calculateGrades(final List<Pair<Integer, Float>> examsStudents, final boolean hasReachedMinimumClasses,final String studentName) {
         if (examsStudents.isEmpty() || !hasReachedMinimumClasses) {
             return 0f;
         }
@@ -53,6 +70,7 @@ public class Principal {
 
         if (gradesWeightSum == 100) {
             if (this.availableToAddPoints()) {
+                this.studentWithPlusPoints.add(studentName);
                 return Float.min(10f, gradesSum + 1);
             } else {
                 return gradesSum;

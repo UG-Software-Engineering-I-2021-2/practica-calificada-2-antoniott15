@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9c1cf92-935c-4a52-a522-ec826ebea603" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/biblioteca/Biblioteca.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/principal/Principal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/principal/Principal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/teacher/Teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/teacher/Teacher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PrincipalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PrincipalTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Tests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,6 +55,24 @@
       <recent name="pair" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="PrincipalTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="PC2" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PrincipalTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.PrincipalTest" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -59,7 +81,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1639084513546</updated>
-      <workItem from="1639084517561" duration="6940000" />
+      <workItem from="1639084517561" duration="8607000" />
     </task>
     <servers />
   </component>
